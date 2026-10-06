@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { FiMenu, FiX } from "react-icons/fi";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -54,35 +55,7 @@ const Navbar = () => {
         aria-label="Toggle navigation menu"
         aria-expanded={isOpen}
       >
-        {isOpen ? (
-          <svg
-            className="w-7 h-7"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2.5"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        ) : (
-          <svg
-            className="w-7 h-7"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2.5"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        )}
+        {isOpen ? <FiX size={28} /> : <FiMenu size={28} />}
       </button>
 
       {/* Mobile Dropdown Menu */}
