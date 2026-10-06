@@ -100,7 +100,6 @@
     justify-content: center;
     flex-direction: column;
     height: 40vh;
-
     align-items: center;
 }
 
@@ -151,4 +150,14 @@
     border-radius: 5%;
     background-size: cover;
     background-size: no-repeat;
+}
+
+@media (max-width: 750px) {
+    .column {
+        margin-bottom: 1em;
+    }
+
+    #downloadCol{
+        columns: 1;
+    }
 }

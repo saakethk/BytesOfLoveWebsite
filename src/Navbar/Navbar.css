@@ -8,16 +8,23 @@
 .header-container {
   background-color: rgb(255, 211, 244);
   position: relative;
+  min-height: 55px;
   height: 10vh;
   width: 100%;
-  /* margin-bottom: 7.5vh; */
   align-content: center;
 }
 
 .logo {
   width: 60px;
   height: 60px;
-  margin-left: 10px;
+  object-fit: contain;
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .logo-container {
@@ -36,9 +43,11 @@
   font-family: 'HeartBubbles', cursive;
   color: #9c4796;
   font-size: 3.5vh;
+}
 
-  @media (max-width: 767px) {
-    font-size: 2.5vh;
+@media (max-width: 767px) {
+  .header-option-text {
+    font-size: 1.5rem;
   }
 }
 
@@ -46,6 +55,7 @@
   position: relative;
   padding: 0 1px; 
   margin: 0 10px;  
+  cursor: pointer;
 }
 
 .header-option-text:hover {
